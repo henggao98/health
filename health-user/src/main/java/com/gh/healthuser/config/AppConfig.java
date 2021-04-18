@@ -2,6 +2,7 @@ package com.gh.healthuser.config;
 
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.Configuration;
+import springfox.documentation.oas.annotations.EnableOpenApi;
 
 /**
  * @author HENG GAO
@@ -9,10 +10,9 @@ import org.springframework.context.annotation.Configuration;
  * @date 2021/4/18 23:39
  */
 
-
-//开启注解类
 @Configuration
-//扫描其他模块中的实体类
-@EntityScan(basePackages={"com.gh.domain"})
+//启用swagger3
+@EnableOpenApi
+@EntityScan(basePackages = {"com.gh.domain"})
 public class AppConfig {
 }

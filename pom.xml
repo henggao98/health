@@ -29,6 +29,7 @@
         <spring-cloud-alibaba.version>2.2.3.RELEASE</spring-cloud-alibaba.version>
         <druid.version>1.2.4</druid.version>
         <fastjson.version>1.2.75</fastjson.version>
+        <swagger3.version>3.0.0</swagger3.version>
     </properties>
 <!--    全家桶的版本选择了毕业版本-->
 <!--   参考地址 https://blog.csdn.net/u012921921/article/details/112510101-->
@@ -77,6 +78,14 @@
                 <artifactId>fastjson</artifactId>
                 <version>${fastjson.version}</version>
             </dependency>
+
+            <!-- swagger 3 仅需一个starter-->
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-boot-starter</artifactId>
+                <version>${swagger3.version}</version>
+            </dependency>
+
         </dependencies>
 
     </dependencyManagement>
